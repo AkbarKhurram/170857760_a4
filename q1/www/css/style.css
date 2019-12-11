@@ -1,0 +1,202 @@
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin: auto 25%;
+  width: 935px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#pic img {
+  margin-bottom: 15px;
+  width: 293px;
+  height: 293px; /* Half the width */
+  margin: auto;
+}
+
+#avatar .avatar {
+vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  position: relative;
+  float: both;
+  border-radius: 50%;
+}
+
+#overlay img{
+  height: 600px;
+  width: 600px;
+  display:inline-block;
+  float: left;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: Verdana, Arial;
+  margin: auto 35%;
+}
+
+
+.description {
+  font-size: 14px;
+  font-family: Verdana, Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row-header {
+  height: 200px;
+  width: 935px;
+  margin:auto 30%;
+  align-self: center;
+}
+
+.column-header-left{
+  width:33%;
+  align-content: center;
+}
+
+.column-header-right{
+  width:66%;
+  align-content: center;
+
+}
+
+#side img {
+  height: 600px;
+  width: 335px;
+  background-color: White;
+  display:inline-block;
+  float:left;
+}
+
+#mobileheader img {
+  width: 300px;
+  height: 5%;
+  margin-left: 15%;
+  margin-top: 5%;
+  display:none;
+}
+
+#mobilebottom img {
+  width: 300px;
+  height: 10px;
+  margin-left: 15%;
+  display:none;
+}
+
+.row {
+  width: 935px;
+  height: 600px;
+  margin:auto 30%;
+  align-self: center;
+}
+
+.column-right{
+  width: 335px;
+  height: 600px;
+  align-content: center;
+}
+
+.column-left{
+  width: 600px;
+  height: 600px;
+  align-content: center;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 293px;
+  height: 293px;
+  opacity: 0.0;
+}
+
+.container .btn:hover {
+  background-color: black;
+   opacity: 0.0;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .row-header{
+    display:inline;
+  }
+  .flex-container{
+    width:311px
+  }
+  .description{
+    display:none;
+  }
+  .row-header{
+    width:100%;
+  }
+
+  #mobileheader img {
+    display: inline;
+  }
+
+  #mobilebottom img {
+    display: inline;
+  }
+
+  #overlay img{
+    height: 300px;
+    width: 300px;
+    margin-left: 15%;
+  }
+
+  #side img {
+    display:none;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .row-header{
+    display:inline;
+  }
+
+  .flex-container{
+    width:623px;
+    margin-right:25%;
+  }
+}
